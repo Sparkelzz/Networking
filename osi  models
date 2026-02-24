@@ -1,0 +1,55 @@
+2. OSI Model — Seven Layers Explained
+
+The OSI (Open Systems Interconnection) Model is a theoretical framework used to describe how network communication happens in distinct layers. It doesn’t represent a specific technology but helps explain how data travels through a network.
+
+🌀 The Seven Layers
+
+> Physical Layer
+
+Transmits raw bits over physical media (cables, wireless).
+
+Deals with electrical/optical signals and hardware like cables, NICs, hubs.
+
+Determines transmission mode (simplex, half-duplex, full-duplex).
+
+> Data Link Layer
+
+Frames bits into structured frames.
+
+Uses MAC addresses to deliver frames within the same local network.
+
+Deals with error detection and access control (who gets to send data when).
+
+> Network Layer
+
+Handles logical addressing (IP addresses) and routing of packets across different networks.
+
+Determines the best path for a packet from source to destination.
+
+> Transport Layer
+
+Ensures end-to-end delivery of data.
+
+Breaks data into segments, manages error handling and sequencing.
+
+Uses protocols like TCP (reliable) and UDP (fast, connectionless).
+
+> Session Layer
+
+Manages sessions (connections) between applications, including their start and end.
+
+Useful for activities like logins, keeping communication states, etc.
+
+> Presentation Layer
+
+Translates and formats data for the application (e.g., encoding, encryption, compression).
+
+Example protocols: TLS/SSL for secure communications.
+
+> Application Layer
+
+Closest to users — supports services like web browsing, email, file transfers.
+
+Protocols include HTTP, FTP, DNS, SMTP.
+
+Why it’s important: OSI helps you visualize network communication and troubleshoot problems by layer (e.g., “Is the issue at layer 3 routing or layer 2 switching?”).
