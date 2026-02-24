@@ -1,0 +1,68 @@
+Subnetting — Dividing Networks
+
+Subnetting is dividing a large IP network into smaller, logical parts called subnets. This improves performance, security, and address management by limiting broadcast traffic and organizing devices logically.
+
+🔹 How Subnets Work
+
+Each subnet has its own range of IP addresses and subnet mask (like /24, meaning 24 bits for network + 8 bits for hosts). This way, traffic intended for one subnet doesn’t flood the others.
+
+📉 Benefits of Subnetting
+
+Reduces unnecessary broadcast traffic.
+
+Improves network performance and security.
+
+Makes address management more efficient.
+
+🔁  Protocols – Rules for Network Communication
+
+Protocols define how data is formatted and transmitted between devices.
+
+✔ Common Protocols
+
+IP (Internet Protocol) — Handles addressing and routing of packets.
+
+TCP (Transmission Control Protocol) — Provides reliable, ordered data transfer.
+
+UDP (User Datagram Protocol) — Fast, connectionless transmission (no reliability).
+
+DHCP — Assigns IP addresses automatically to devices on a network.
+
+DNS — Converts domain names to IP addresses (like translating example.com to an IP).
+
+ARP — Resolves an IP address to a MAC address on a local network.
+
+These protocols work together to enable data to travel from one device to another, regardless of distance or platform.
+
+💠  VLAN — Virtual Local Area Network
+
+A VLAN (Virtual LAN) is a way to segment a physical network into multiple logical networks at the data link layer (OSI Layer 2). Devices in different VLANs cannot see each other’s broadcast traffic unless routed.
+
+🚀 Why Use VLANs?
+
+Segmentation: Groups devices by function rather than physical location.
+
+Security: Limits traffic scope and possible unauthorized access.
+
+Manageability: Easier to apply policies per group (e.g., voice vs. data).
+
+VLANs use tags (according to IEEE 802.1Q) so switches know which VLAN a frame belongs to.
+
+📊  Transport Protocols (TCP vs UDP)
+
+TCP (Transmission Control Protocol)
+Reliable: ensures every segment arrives and is in order.
+Used by web browsing, email, file transfer.
+
+UDP (User Datagram Protocol)
+Faster, connectionless: sends data without establishing a session or checking delivery.
+Used in real-time applications like streaming or DNS queries.
+
+🎯 Summary                                                               
+Topic                                                                     What It Does
+OSI Model                                                     Conceptually explains networking in 7 functional layers.
+TCP/IP Model                                                  Practical networking framework used on the Internet.
+IP Addressing                                                 Identifies devices uniquely in a network.
+Subnetting                                                    Splits networks logically for efficiency.
+Protocols                                                     Rules for how devices communicate.
+VLANs                                                         Segments networks logically at the data link layer.
