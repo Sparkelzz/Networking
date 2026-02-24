@@ -1,0 +1,49 @@
+🌐 TCP/IP Model — Practical Networking Framework
+
+The TCP/IP model (also called the Internet Protocol Suite) is the real-world framework that governs how data is transmitted on the Internet. It’s simpler and more practical than OSI.
+
+🔹 Layers of TCP/IP
+
+> Network Access (Link) Layer
+
+Combines OSI’s physical + data link functions.
+
+Responsible for hardware transmission (Ethernet, Wi-Fi).
+
+> Internet Layer
+
+Handles logical addressing, packet formation, and routing using IP.
+
+Protocols include IP, ICMP, ARP.
+
+> Transport Layer
+
+Ensures data delivery services between hosts.
+
+Uses TCP for reliable connections and UDP for fast, connectionless communication.
+
+> Application Layer
+
+Closest to users and applications.
+
+Combines OSI’s Application, Presentation, and Session functions.
+
+Protocols: HTTP, FTP, DNS, SMTP, etc.
+
+* Why it matters: The Internet runs on TCP/IP. Understanding this stack helps you grasp real network traffic and how protocols operate end‐to‐end.
+
+🧮  IP Addressing — Identifying Devices
+
+An IP address is a unique identifier for a device on a network, similar to a postal address for mail delivery. It allows routers and other devices to locate and communicate with each other across networks.
+
+🔹 Version Differences
+
+IPv4 — 32-bit address (like 192.168.1.1).
+
+IPv6 — 128-bit address (like 2001:db8::1), created because IPv4 addresses were running out.
+
+📌 Types of IP Addresses
+
+Public IP: Visible on the Internet.
+
+Private IP: Used within internal networks (e.g., 192.168.x.x)
