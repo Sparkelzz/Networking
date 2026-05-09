@@ -1,0 +1,38 @@
+>>> Dynamic <<<
+It is a method where routers automatically learn and update routes between networks using routing protocols.
+
+1) RIP ( routing information protocol)
+* It is a Distance Vector Routing Protocol that uses hop count as a metric to determine the best path.
+* RIP allows routers to exchnage the routing information and automatically choose the shortest route based on the number of hops.
+
+-> Hop count:
+Hop count means the number of routers a packet travels/crosses to reach the destination.
+example- 
+* Router A --> Router B --> Router C
+* Hop count = 2
+
+-> RIP versions:
+* RIP v1
+It is an classfull routing protocol.
+It does not support VLSM/CIDR.
+Uses broadcast updates.
+* RIP v2
+Classeless routing protocol.
+Supports VLSM/CIDR.
+Uses multicast address 224.0.0.9
+
+-> Basic CISCO RIP configurations:
+
+Router(config) # router rip
+Router(config-router) # version 2
+Router(config-router) # network 192.168.10.0
+Router(config-router) # exit
+
+* verification commands
+1-show ip route
+2-show ip protocol
+
+* test connectivity
+ping 192.168.10.1
+
+2) 
